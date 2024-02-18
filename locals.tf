@@ -3,4 +3,11 @@ locals {
   namespaced_service_name = "${var.service_name}-${var.environment}"
 
   has_domain_name = var.domain_name != null
+
+  dynamodb_config = {
+    partition_key = "TodoId"
+    sort_key      = "UserId"
+    gsi_name      = "TodosByUser"
+    gsi_sort_key  = "Done"
+  }
 }
