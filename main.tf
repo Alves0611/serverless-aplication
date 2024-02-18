@@ -3,8 +3,8 @@ provider "aws" {
 
   default_tags {
     tags = {
-      "Module"     = "serverless aplication"
-      "ManagedBy"  = "Terraform"
+      "Module"    = "serverless aplication"
+      "ManagedBy" = "Terraform"
     }
   }
 }
